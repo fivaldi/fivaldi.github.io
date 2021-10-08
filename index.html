@@ -16,9 +16,9 @@
 
         <div class="container-md d-flex flex-row align-items-stretch h-100 p-0" style="background-color: #faebd7;">
             <div class="col-1 gradient-left"></div>
-            <div class="col-10 p-3">
-                <div id="main-nav">
-                    <ul class="nav nav-pills">
+            <div class="col-10 d-flex flex-column align-items-start">
+                <div id="nav" class="p-3 w-100">
+                    <ul class="nav nav-pills justify-content-end">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Domů</a>
                         </li>
@@ -31,7 +31,8 @@
                     </ul>
                 </div>
 
-                <div id="main-content" class="p-3"></div>
+                <div id="content" class="p-3"></div>
+                <div id="footer" class="mt-auto p-3 w-100"><p class="text-center">&copy; 2021 Filip Valder</p></div>
 
             </div>
             <div class="col-1 gradient-right"></div>
@@ -58,7 +59,7 @@
                 if ( location.hash !== '') {
                     page = location.hash.substr(1);
                 }
-                $('#main-content').load('pages/' + page + '.html');
+                $('#content').load('pages/' + page + '.html');
             });
         </script>
 
