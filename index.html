@@ -14,25 +14,28 @@
         <title>Hello, world!</title>
 
     </head>
-    <body class="h-100">
+    <body style="min-height: 100%;">
 
         <div class="container-md d-flex flex-row align-items-stretch h-100 p-0" style="background-color: #faebd7;">
             <div class="col-1 gradient-left"></div>
             <div class="col-10 d-flex flex-column align-items-start">
+                <div id="title" class="p-3"><h1>Vítej na mé domovské stránce!<h1></div>
                 <div id="nav" class="p-3 w-100">
                     <nav class="nav nav-pills flex-column flex-sm-row justify-content-end">
-                        <a class="nav-link align-self-end" href="#"><i class="fa fa-home"></i> Domů</a>
-                        <a class="nav-link align-self-end" href="#kontakt"><i class="fa fa-address-card"></i> Kontakt</a>
-                        <a class="nav-link align-self-end" href="#atd"><i class="fa fa-ellipsis-h"></i> Atd.</a>
+                        <a class="nav-link align-self-end text-nowrap" href="#"><i class="fa fa-home"></i> Domů</a>
+                        <a class="nav-link align-self-end text-nowrap" href="#python"><i class="fab fa-python"></i> Python</a>
+                        <a class="nav-link align-self-end text-nowrap" href="#cbpmr"><i class="fas fa-broadcast-tower"></i> CB/PMR</a>
+                        <a class="nav-link align-self-end text-nowrap" href="#kontakt"><i class="fa fa-address-card"></i> Kontakt</a>
+                        <a class="nav-link align-self-end text-nowrap" href="#atd"><i class="fa fa-ellipsis-h"></i> Atd.</a>
                     </nav>
                 </div>
 
-                <div id="content" class="p-3"></div>
-                <div id="footer" class="mt-auto p-3 w-100"><p class="text-center">&copy; 2021 Filip Valder</p></div>
+                <div id="content" class="p-3 pb-5"></div>
 
             </div>
             <div class="col-1 gradient-right"></div>
         </div>
+        <div id="footer" class="p-3 w-100"><p class="text-center">&copy; 2021 Filip Valder | <a href="https://pages.github.com/">GitHub Pages</a> | <a href="https://getbootstrap.com/">Bootstrap</a></p></div>
 
         <!-- jQuery and Bootstrap Bundle (includes Popper) -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"

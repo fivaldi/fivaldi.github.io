@@ -1,11 +1,17 @@
 .gradient-left {
     background-color: white;
-    -webkit-mask-image: -webkit-gradient(linear, left top, right top, 
-    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
 }
 
 .gradient-right {
     background-color: white;
-    -webkit-mask-image: -webkit-gradient(linear, left top, right top, 
-    from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
+    -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
+}
+
+.list-group-item {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.jumbotron {
+    background-color: rgba(233, 236, 239, 0.5);
 }
