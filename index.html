@@ -55,10 +55,14 @@
                     });
                 });
                 var page = 'home';
-                if ( location.hash !== '') {
+                if (location.hash !== '') {
                     page = location.hash.substr(1);
                 }
-                $('#content').load('pages/' + page + '.html');
+                $('#content').load('pages/' + page + '.html', function(response, status, xhr) {
+                    if (status == 'error') {
+                        $('#content').load('pages/404.html');
+                    }
+                });
             });
         </script>
 
